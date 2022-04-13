@@ -1,0 +1,157 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.8;
+	color: #626567;
+}
+
+section {
+	padding: 60px 0;
+}
+
+section:last-child {
+	padding: 0;
+	background-color: var(--main-color);
+}
+
+.rounded {
+	border-radius: .6rem!important;
+}
+
+/* настройка цветов */
+
+:root {
+  --main-color: #73C6B6;
+  --second-color: #148F77;
+}
+
+.main-color {
+	color:var(--main-color);
+}
+
+.second-color {
+	color:var(--second-color);
+}
+
+.bg-main {
+	background-color: var(--main-color);
+}
+
+.bg-second {
+	background-color: var(--second-color);
+}
+
+/* навигация */
+
+header img {	
+	height: 28px;
+	width: auto;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+}
+
+/* кнопка обратной связи и соц сетей */
+
+a {
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.btn-social:hover {
+	margin: -5px 0 5px 0;
+}
+
+.btn-vvm {
+	margin: 0 auto;
+	display: block;
+	max-width: 220px;
+	color: #fff;
+	background-color: var(--main-color);
+	border-radius: .6rem!important;
+}
+
+.btn-vvm:hover {
+	background-color: var(--second-color);
+	color: #fff;
+}
+
+/* фон первой секции */
+
+.first-block {
+	background-image: url(../img/header.jpg);
+
+}
+
+/* 4 блока и анимация для них */
+
+.box {
+	background: rgba(0,0,0,0.5);
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.box:hover {
+	background: rgba(0,0,0,0.85);
+}
+
+.box h4 {
+	position: relative;
+	top: 100px;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.box:hover h4 {
+	top: 0;
+}
+
+.box p {
+	visibility: 0;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.box:hover p {
+	visibility: 1;
+	opacity: 1;
+}
+
+.box a {
+	visibility: 0;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.box:hover a {
+	visibility: 1;
+	opacity: 1;
+}
+
+/* подвал */
+
+#footer img {
+	height: 40px;
+	width: auto;
+}
+/* карусель */
+
+.carousel-item{
+	height: 490px;
+}
+
+.carousel-caption img {
+	width: 280px;
+	height: 280px;
+	padding: 12px;
+	border: 3px solid var(--main-color);
+	border-radius: 50%;
+	margin-bottom: 28px;
+}
+
+@media (max-width: 768px){
+	.carousel-item{
+		height: 570px;
+	}
+}
