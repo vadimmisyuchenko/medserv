@@ -2,6 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.8;
 	color: #626567;
+	background-color: #FAFAFA;
 }
 
 section {
@@ -17,6 +18,14 @@ section:last-child {
 	border-radius: .6rem!important;
 }
 
+h1, h2, h3 h4	{
+	font-weight: 600;
+}
+
+p {
+	font-weight: 500;
+}
+
 /* настройка цветов */
 
 :root {
@@ -28,16 +37,8 @@ section:last-child {
 	color:var(--main-color);
 }
 
-.second-color {
-	color:var(--second-color);
-}
-
 .bg-main {
 	background-color: var(--main-color);
-}
-
-.bg-second {
-	background-color: var(--second-color);
 }
 
 /* навигация */
@@ -54,6 +55,10 @@ header img {
 /* кнопка обратной связи и соц сетей */
 
 a {
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.btn-social{
 	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -91,6 +96,10 @@ a {
 	flex-direction: column;
 	justify-content: space-around;
 	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.box, .bg-box {
+	border-radius: 1rem;
 }
 
 .box:hover {
@@ -132,26 +141,86 @@ a {
 /* подвал */
 
 #footer img {
-	height: 40px;
+	height: 36px;
 	width: auto;
 }
 /* карусель */
 
 .carousel-item{
-	height: 490px;
+	height: 380px;
 }
 
 .carousel-caption img {
-	width: 280px;
-	height: 280px;
-	padding: 12px;
+	width: 120px;
+	height: 120px;
+	padding: 6px;
 	border: 3px solid var(--main-color);
 	border-radius: 50%;
 	margin-bottom: 28px;
 }
 
-@media (max-width: 768px){
+.carousel-caption p{
+	font-style: italic;
+}
+
+@media (max-width: 426px){
 	.carousel-item{
-		height: 570px;
+		height: 400px;
+	}
+	.carousel-item img{
+		display: none;
+	}
+}
+
+/* контакты */
+
+.social img {
+	width: 32px;
+}
+
+#contacts {
+	position: relative;
+}
+
+.position {
+	position: absolute;
+	right: 5rem;
+	top:-50px;
+}
+
+#contacts p {
+	border-bottom: 2px solid var(--main-color);
+	font-size: 1.1rem;
+	padding-bottom: 6px;
+}
+
+#contacts span {
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+}
+
+#contacts i {
+	font-size: 1.5rem;
+	margin-right: 6px;
+}
+
+#contacts p a {
+	text-decoration: none;
+	color: #626567;
+}
+
+/* медиа запросы*/
+
+@media (max-width: 767px){
+	.position {
+		right: 0;
+	}
+
+	section:first-child{
+		padding: 0;
+	}
+
+	.first-block {
+		background: none;
 	}
 }
