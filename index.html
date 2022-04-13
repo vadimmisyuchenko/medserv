@@ -12,11 +12,11 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" class="style">
 </head>
 <body>
-	<header>
+	<header class="bg-white">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
@@ -30,7 +30,7 @@
 						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						  О компании
 						</a>
-						<ul class="dropdown-menu rounded" aria-labelledby="navbarDropdown">
+						<ul class="dropdown-menu rounded shadow-lg" aria-labelledby="navbarDropdown">
 						  <li><a class="dropdown-item" href="#why_we">Почему мы</a></li>
 						  <li><a class="dropdown-item" href="#team">Наши специалисты</a></li>
 						  <li><a class="dropdown-item" href="#feedback">Отзывы</a></li>
@@ -40,7 +40,7 @@
 						<a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						  Наши услуги
 						</a>
-						<ul class="dropdown-menu rounded" aria-labelledby="navbarDropdown">
+						<ul class="dropdown-menu rounded shadow" aria-labelledby="navbarDropdown">
 						  <li><a class="dropdown-item" href="#services">Диагностика</a></li>
 						  <li><a class="dropdown-item" href="#repair">Ремонт</a></li>
 						  <li><a class="dropdown-item" href="#mounting">Монтаж</a></li>
@@ -67,7 +67,7 @@
 		<section class="first-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 col-lg-4 px-4 py-4 bg-white rounded">
+					<div class="col-sm-12 col-lg-5 px-4 py-4 bg-white rounded shadow">
 						<img src="img/logo/logo2.png" alt="logo MedServ" class="img-fluid">
 						<h1 class="text-center py-4">Мы оживим Вашу технику</h1>
 						<a href="https://t.me/med_serv" class="btn btn-lg btn-vvm">Связатся с нами</a>
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-main text-white" id="services">
+		<section class="bg-main text-white shadow-lg" id="services">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-sm-12 col-md-10 mx-auto text-center">
@@ -94,7 +94,7 @@
 				</div>
 				<div class="row text-center">
 					<div class="col-sm-12 col-md-6 col-xl-3 my-3">
-						<div style="background: url(img/serv1.jpg) no-repeat top/cover;">
+						<div class="bg-box" style="background: url(img/serv1.jpg) no-repeat top/cover;">
 							<div class="box py-5 px-2">
 								<h4>Диагностика</h4>
 								<p>Наши специалисты проведут полную диагностику неисправностей любого медицинского оборудования</p>
@@ -103,7 +103,7 @@
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-xl-3 my-3" id="repair">
-						<div style="background: url(img/serv2.jpg) no-repeat top/cover;">
+						<div class="bg-box" style="background: url(img/serv2.jpg) no-repeat top/cover;">
 							<div class="box py-5 px-2">
 								<h4>Ремонт</h4>
 								<p>Квалифицированный и качественный ремонт аппаратуры в кратчайшие сроки</p>
@@ -112,7 +112,7 @@
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-xl-3 my-3" id="mounting">
-						<div style="background: url(img/serv3.jpg) no-repeat top/cover;">
+						<div class="bg-box" style="background: url(img/serv3.jpg) no-repeat top/cover;">
 							<div class="box py-5 px-2">
 								<h4>Монтаж</h4>
 								<p>Установка оборудования и пусконаладочные работы на объектах</p>
@@ -121,7 +121,7 @@
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-xl-3 my-3" id="supplies">
-						<div style="background: url(img/serv4.png) no-repeat top/cover;">
+						<div class="bg-box" style="background: url(img/serv4.png) no-repeat top/cover;">
 							<div class="box  py-5 px-2">
 								<h4>Поставки</h4>
 								<p>Медицинская техника и расходники к ней по предзаказу</p>
@@ -132,12 +132,11 @@
 				</div>
 			</div>
 		</section>
-		<section id="team">
+		<section id="feedback">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-10 mx-auto text-center">
-						<h2>Наша команда</h2>
-						<p>Вы получаете сервис высочайшего класса от первоклассных инженеров по обслуживанию медицинской техники</p>
+						<h2>Отзывы наших клиентов</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -148,38 +147,56 @@
 							  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
 							  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 							  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
 							</div>
 							<div class="carousel-inner">
 							  <div class="carousel-item active" data-bs-interval="10000">
 								<img src="img/back-white.png" class="d-block w-100" alt="...">
 								<div class="carousel-caption d-md-block">
-									<img src="img/заглушка.png" alt="">
-								  <h5>Ярослав/ <span class="main-color">Инженер-электромеханик</span></h5>
-								  <p>Осуществляет первичную дигностику и ремонт на объектах. Ремонт стоматологических установок, инструмента.</p>
+									<img src="img/feedback/1.jpg" alt="">
+								  <h5>Анастаясия / <span class="main-color">Главный врач</span></h5>
+								  <p>"Внимательное отношение к нашим интересам, а также четкое следование принципам деловой этики, желание найти компромисс, делают компанию «Medserv» надежным поставщиком."</p>
 								</div>
 							  </div>
 							  <div class="carousel-item" data-bs-interval="2000">
 								<img src="img/back-white.png" class="d-block w-100" alt="...">
 								<div class="carousel-caption d-md-block">
-									<img src="img/nikita.jpg" alt="">
-								  <h5>Никита / <span class="main-color">Инженер-электроник</span></h5>
-								  <p>Специалист в области электроники. Направление деятельности: лабораторное, терапевтическое, хирургическое оборудование.</p>
+									<img src="img/feedback/2.jpg" alt="">
+								  <h5>Евгений / <span class="main-color">Заведующий рентген кабинетом</span></h5>
+								  <p>"Сотрудничаем на постоянной основе. Высокий уровень профессионализма персонала и оперативность в решении вопросов, четко выражают компанию "Medserv" среди их конкурентов."</p>
 								</div>
 							  </div>
 							  <div class="carousel-item">
 								<img src="img/back-white.png" class="d-block w-100" alt="...">
 								<div class="carousel-caption d-md-block">
-									<img src="img/заглушка.png" alt="">
-								  <h5>Александр / <span class="main-color">Инженер компьютерных систем</span></h5>
-								  <p>Специалист по програмному обеспечению. Занимается восстановлением баз данных, програмных комплексов, програмным обеспечением аппаратов УЗИ.</p>
+									<img src="img/feedback/3.jpg" alt="">
+								  <h5>Яков Сергеевич / <span class="main-color">Врач-стоматолог</span></h5>
+								  <p>"Команда "цельных" инженеров, знающих свое дело! Обращался по поводу ремонта стоматологической установки. Точная диагностика, быстрое решение проблемы, качественный результат!"</p>
 								</div>
 							  </div>
 							  <div class="carousel-item">
 								<img src="img/back-white.png" class="d-block w-100" alt="...">
 								<div class="carousel-caption d-md-block">
-									<img src="img/s.jpg" alt="">
-								  <h5>Станислав / <span class="main-color">Инженер медицинской техники</span></h5>
-								  <p>Специалист в области телемедицины. Основное направление деятельности дыхательное, реаниамационное и диагностическое оборудование.</p>
+									<img src="img/feedback/4.jpg" alt="">
+								  <h5>Виталий / <span class="main-color">Врач хирург-стоматолог, имплантолог</span></h5>
+								  <p>"Благодарим за своевременное и качественное выполнение поставленных задач и надеемся на дальнейшее плодотворное и взаимовыгодное сотрудничество с Вашей компанией!"</p>
+								</div>
+							  </div>
+							  <div class="carousel-item">
+								<img src="img/back-white.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-md-block">
+									<img src="img/feedback/5.jpg" alt="">
+								  <h5>Яна / <span class="main-color">Детский стоматолог-терапевт</span></h5>
+								  <p>"Неоднократно обращалась за консультацией и получала полный, развёрнутый ответ на интересующие вопросы. Надеютсь на дальнейшую плодотворную совместную работу!"</p>
+								</div>
+							  </div>
+							  <div class="carousel-item">
+								<img src="img/back-white.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-md-block">
+									<img src="img/feedback/6.jpg" alt="">
+								  <h5>Павел Олимп / <span class="main-color">Зав. зуботехнической лабораторией</span></h5>
+								  <p>"Лучшие специалисты в регионе. Неоднократоно имел возможность убедиться в высоком профессионализме и отзывчивости сотрудников. Любые вопросы решаются в кратчайшие сроки."</p>
 								</div>
 							  </div>
 							</div>
@@ -196,11 +213,28 @@
 				</div>
 			</div>
 		</section>
-		<section id="feedback">
-
-		</section>
+		
 		<section id="contacts">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5354.973881966356!2d35.113738!3d47.849532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc672992c10523%3A0x7aada81c7f53830d!2z0LHRg9C7LiDQqNC10LLRh9C10L3QutC-LCAxMiwg0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2OTAwMA!5e0!3m2!1sru!2sua!4v1630164216454!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<div class="container">
+				<div class="row d-flex justify-content-end">
+					<div class="col-sm-12 col-md-6 col-lg-3 px-4 py-3 bg-white rounded position shadow-lg">
+						<img src="img/logo/logo2.png" alt="logo MedServ" class="img-fluid">
+						<p><i class="bi bi-geo-alt main-color"></i> Украина, г. Запорожье, бульвар Шевченко, 12</p>
+						<p><i class="bi bi-telephone main-color"></i><a href="tel:+380660221104">+38(066)022-11-04</a><br>
+							<i class="bi bi-telephone main-color"></i><a href="tel:+380683495055">+38(068)349-50-55</a></p>
+						<p>Наша почта: 
+							<a href="mailto:https://goo.gl/maps/BuQ1efStAqpK1bDL9">medserv3@gmail.com</a></p>
+						<span>Мы в социальных сетях:</span>
+						<div class="d-flex social justify-content-between">
+							<a class="btn btn-social" href="mailto:medserv3@gmail.com"><img src="img/social/gmail.svg" alt="gmail"></a>
+							<a class="btn btn-social" href="https://t.me/med_serv"><img src="img/social/telegram.svg" alt="telegram"></a>
+							<a class="btn btn-social" href="https://www.instagram.com/med__serv/"><img src="img/social/instagram.svg" alt="instagram"></a>
+							<a class="btn btn-social" href="viber://chat?number=30660221104"><img src="img/social/viber.svg" alt="viber"></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5354.973881966356!2d35.113738!3d47.849532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc672992c10523%3A0x7aada81c7f53830d!2z0LHRg9C7LiDQqNC10LLRh9C10L3QutC-LCAxMiwg0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2OTAwMA!5e0!3m2!1sru!2sua!4v1630164216454!5m2!1sru!2sua" width="100%" height="450" style="border:0" allowfullscreen="" loading="lazy"></iframe>
 		</section>
 	</main>
 
