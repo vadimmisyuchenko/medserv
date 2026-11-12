@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MedServ ремонт медицинского, косметологического и стаматолического оборудования</title>
-	<meta name="description" content="Осуществляем диагностику, обслуживание, ремонт и монтаж медицинского, косметологического и стаматолического оборудования.">
-	<meta name="keywords" content="Ремонт медицинского, косметологического и стаматолического оборудования">
+	<title>MedServ — ремонт медичного обладнання у Запоріжжі</title>
+	<meta name="description" content="Професійний ремонт медичного та стоматологічного обладнання у Запоріжжі. Діагностика, монтаж, поставки. Швидко та з гарантією.">
+	<meta name="keywords" content="Ремонт медичного, косметологічного та стоматологічного обладнання">
 	<link rel="shortcut icon" href="img/logo/FavIcon.png" type="image/x-icon">
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -36,36 +36,44 @@
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav m-auto mb-2 mb-lg-0">
 					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  О компании
+						<a class="nav-link dropdown-toggle" href="#home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_about">
+						  Про компанію
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="#why_we">Почему мы</a></li>
-						  <li><a class="dropdown-item" href="#team">Наши специалисты</a></li>
-						  <li><a class="dropdown-item" href="#testimonials">Отзывы</a></li>
+						  <li><a class="dropdown-item" href="#why_we" data-i18n="nav_why">Чому ми</a></li>
+						  <li><a class="dropdown-item" href="#team" data-i18n="nav_team">Наші спеціалісти</a></li>
+						  <li><a class="dropdown-item" href="#testimonials" data-i18n="nav_reviews">Відгуки</a></li>
 						</ul>
 					  </li>
 					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  Наши услуги
+						<a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_services">
+						  Наші послуги
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="#service">Диагностика</a></li>
-						  <li><a class="dropdown-item" href="#repair">Ремонт</a></li>
-						  <li><a class="dropdown-item" href="#mounting">Монтаж</a></li>
-						  <li><a class="dropdown-item" href="#supplies">Поставки</a></li>
+						  <li><a class="dropdown-item" href="#service" data-i18n="nav_diag">Діагностика</a></li>
+						  <li><a class="dropdown-item" href="#repair" data-i18n="nav_repair">Ремонт</a></li>
+						  <li><a class="dropdown-item" href="#mounting" data-i18n="nav_mount">Монтаж</a></li>
+						  <li><a class="dropdown-item" href="#supplies" data-i18n="nav_supply">Поставки</a></li>
 						</ul>
 					  </li>
 					  <li class="nav-item">
-						<a class="nav-link" href="#contact-us">Контакты</a>
+						<a class="nav-link" href="#contact-us" data-i18n="nav_contacts">Контакти</a>
 					  </li>
 					</ul>
+					<!-- --
 					<div class="social">
 						<a href="mailto:medserv3@gmail.com" class="btn"><img src="img/social/gmail.svg" alt="gmail" class="img-fluid" height="24px" width="24px"></a>
 						<a href="https://t.me/med_serv" class="btn"><img src="img/social/telegram.svg" alt="telegram" class="img-fluid" height="24px" width="24px"></a>
 						<a href="viber://chat?number=30660221104" class="btn"><img src="img/social/viber.svg" alt="viber" class="img-fluid" height="24px" width="24px"></a>
 						<a href="https://www.instagram.com/med__serv/" class="btn"><img src="img/social/instagram.svg" alt="instagram" class="img-fluid" height="24px" width="24px"></a>
 					</div>
+					-->
+					<!-- Language switcher -->
+					<div class="lang-switcher">
+						<button class="lang-btn active" id="btn-uk" onclick="setLang('uk')">UA</button>
+						<button class="lang-btn" id="btn-ru" onclick="setLang('ru')">RU</button>
+					</div>
+					</>
 				  </div>
 				</div>
 			  </nav>
@@ -76,10 +84,16 @@
 		<section class="py-0 py-md-5" style="background-image: url(img/header.jpg); background-size: cover;" id="home">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-7 col-lg-5 bg-white rounded shadow p-5 text-center">
+					<div class="col-12 col-md-7 col-lg-5 bg-white rounded shadow p-3 text-center">
 						<img src="img/logo/logo2.png" alt="Logo MedServ" class="img-fluid">
-						<h1 class="fw-bold display-4 mb-4">Мы оживим Вашу технику</h1>
-						<a href="https://t.me/med_serv" class="btn btn-primary btn-lg w-100">Связаться с нами</a>
+						<h1 class="fw-bold display-4 mb-4" data-i18n="hero_title">Ми відновимо Вашу техніку</h1>
+						<a href="https://t.me/med_serv" class="btn btn-primary btn-lg w-100" data-i18n="hero_btn" target="_blank">Зв'язатися з нами</a>
+						<div class="social mt-2">
+							<a href="mailto:medserv3@gmail.com" class="btn" target="_blank"><img src="img/social/gmail.svg" alt="gmail" class="img-fluid" height="24px" width="24px"></a>
+							<a href="https://t.me/med_serv" class="btn" target="_blank"><img src="img/social/telegram.svg" alt="telegram" class="img-fluid" height="24px" width="24px"></a>
+							<a href="viber://chat?number=30660221104" class="btn"target="_blank"><img src="img/social/viber.svg" alt="viber" class="img-fluid" height="24px" width="24px"></a>
+							<a href="https://www.instagram.com/med__serv/" class="btn" target="_blank"><img src="img/social/instagram.svg" alt="instagram" class="img-fluid" height="24px" width="24px"></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -88,12 +102,12 @@
 			<div class="container">
 				<div class="row align-items-center text-center text-md-start">
 					<div class="col-12 col-md-5">
-						<h2 class="h3 fw-bold mb-3">Необходим ремонт медицинского оборудования в Украине?</h2>
+						<h2 class="h3 fw-bold mb-3" data-i18n="why_title">Потрібен ремонт медичного обладнання в Україні?</h2>
 					</div>
 					<div class="vr col-1" style="width: 4px;padding: 0;"></div>
 					<div class="col-12 col-md-6">
-						<p>
-							Смело обращайтесь в нашу компанию. Мы имеем большой опыт проведения всех работ по обслуживанию медицинского оборудования, а так же штат квалифицированных специалистов. Мы оказываем качественные услуги!
+						<p data-i18n="why_desc">
+							Сміливо звертайтесь до нашої компанії. Ми маємо великий досвід проведення всіх робіт з обслуговування медичного обладнання, а також штат кваліфікованих спеціалістів. Ми надаємо якісні послуги!
 						</p>
 					</div>
 				</div>
@@ -105,52 +119,52 @@
 					<div class="col-12 col-md-3 my-3" id="service">
 						<div class="rounded shadow" style="background: url(img/serv1.jpg) no-repeat top/cover;">
 							<div class="rounded service-box px-4 py-5">
-								<h3>
-									Диагностика
+								<h3 data-i18n="serv1_title">
+									Діагностика
 								</h3>
-								<p>
-									Наши специалисты проведут полную диагностику неисправностей любого медицинского оборудования
+								<p data-i18n="serv1_desc">
+									Наші спеціалісти проведуть повну діагностику несправностей будь-якого медичного обладнання
 								</p>
-								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg">Заказать</a>
+								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg" data-i18n="btn_order" target="_blank">Замовити</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-md-3 my-3" id="repair">
 						<div class="rounded shadow" style="background: url(img/serv2.jpg) no-repeat top/cover;">
 							<div class="rounded service-box px-4 py-5">
-								<h3>
+								<h3 data-i18n="serv2_title">
 									Ремонт
 								</h3>
-								<p>
-									Квалифицированный и качественный ремонт аппаратуры в кратчайшие сроки
+								<p data-i18n="serv2_desc">
+									Кваліфікований та якісний ремонт апаратури у найкоротші терміни
 								</p>
-								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg">Заказать</a>
+								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg" data-i18n="btn_order" target="_blank">Замовити</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-md-3 my-3" id="mounting">
 						<div class="rounded shadow" style="background: url(img/serv3.jpg) no-repeat top/cover;">
 							<div class="rounded service-box px-4 py-5">
-								<h3>
+								<h3 data-i18n="serv3_title">
 									Монтаж
 								</h3>
-								<p>
-									Установка оборудования и пусконаладочные работы на объектах
+								<p data-i18n="serv3_desc">
+									Встановлення обладнання та пусконалагоджувальні роботи на об'єктах
 								</p>
-								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg">Заказать</a>
+								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg" data-i18n="btn_order" target="_blank">Замовити</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-md-3 my-3" id="supplies">
 						<div class="rounded shadow" style="background: url(img/serv4.png) no-repeat top/cover;">
 							<div class="rounded service-box px-4 py-5">
-								<h3>
+								<h3 data-i18n="serv4_title">
 									Поставки
 								</h3>
-								<p>
-									Медицинская техника и расходники к ней по предзаказу
+								<p data-i18n="serv4_desc">
+									Медична техніка та витратні матеріали до неї за попереднім замовленням
 								</p>
-								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg">Заказать</a>
+								<a href="https://t.me/med_serv" class="btn btn-primary btn-lg" data-i18n="btn_order" target="_blank">Замовити</a>
 							</div>
 						</div>
 					</div>
@@ -162,68 +176,68 @@
             <div class="container">
               <div class="row text-center">
                 <div class="col-12">
-                  <h2 class="h1 fw-bold">Отзывы наших клиентов</h2>
+                  <h2 class="h1 fw-bold" data-i18n="reviews_title">Відгуки наших клієнтів</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="owl-carousel owl-theme text-center">
                   <div class="item">
                     <div class="feedback-box rounded p-3 shadow m-4 bg-white">
-                      <img src="img/feedback/5.jpg" alt="Отзыв Яны" class="img-fluid mb-4 mx-auto">
+                      <img src="img/feedback/5.jpg" alt="Відгук Яни" class="img-fluid mb-4 mx-auto">
                       <h4 class="c-accent fw-bold">Яна</h4>
-                      <h6 class="text-primary">Детский стоматолог-терапевт</h6>
-                      <p>
-                        <i>"Неоднократно обращалась за консультацией и получала полный, развёрнутый ответ на интересующие вопросы. Надеютсь на дальнейшую плодотворную совместную работу!"</i>
+                      <h6 class="text-primary" data-i18n="rev1_role">Дитячий стоматолог-терапевт</h6>
+                      <p data-i18n="rev1_text">
+                        <i>"Неодноразово зверталась за консультацією і отримувала повну, розгорнуту відповідь на питання, що цікавили. Сподіваюсь на подальшу плідну спільну роботу!"</i>
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="feedback-box rounded p-3 shadow m-4 bg-white">
-                      <img src="img/feedback/6.jpg" alt="Отзыв Павла" class="img-fluid mb-4 mx-auto">
-                      <h4 class="c-accent fw-bold">Павел Олимп</h4>
-                      <h6 class="text-primary">Зав. зуботехнической лабораторией</h6>
-                      <p>
-                        <i>"Лучшие специалисты в регионе. Неоднократоно имел возможность убедиться в высоком профессионализме и отзывчивости сотрудников. Любые вопросы решаются в кратчайшие сроки."</i>
+                      <img src="img/feedback/6.jpg" alt="Відгук Павла" class="img-fluid mb-4 mx-auto">
+                      <h4 class="c-accent fw-bold">Павел Олімп</h4>
+                      <h6 class="text-primary" data-i18n="rev2_role">Зав. зуботехнічною лабораторією</h6>
+                      <p data-i18n="rev2_text">
+                        <i>"Найкращі спеціалісти в регіоні. Неодноразово мав можливість переконатись у високому професіоналізмі та чуйності співробітників. Будь-які питання вирішуються у найкоротші терміни."</i>
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="feedback-box rounded p-3 shadow m-4 bg-white">
-                      <img src="img/feedback/1.jpg" alt="Отзыв Анастаясии" class="img-fluid mb-4 mx-auto">
-                      <h4 class="c-accent fw-bold">Анастаясия</h4>
-                      <h6 class="text-primary">Главный врач</h6>
-                      <p>
-                        <i>"Внимательное отношение к нашим интересам, а также четкое следование принципам деловой этики, желание найти компромисс, делают компанию «Medserv» надежным поставщиком."</i>
+                      <img src="img/feedback/1.jpg" alt="Відгук Анастасії" class="img-fluid mb-4 mx-auto">
+                      <h4 class="c-accent fw-bold">Анастасія</h4>
+                      <h6 class="text-primary" data-i18n="rev3_role">Головний лікар</h6>
+                      <p data-i18n="rev3_text">
+                        <i>"Уважне ставлення до наших інтересів, а також чітке дотримання принципів ділової етики, бажання знайти компроміс, роблять компанію «Medserv» надійним постачальником."</i>
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="feedback-box rounded p-3 shadow m-4 bg-white">
-                      <img src="img/feedback/2.jpg" alt="Отзыв Евгения" class="img-fluid mb-4 mx-auto">
-                      <h4 class="c-accent fw-bold">Евгений</h4>
-                      <h6 class="text-primary">Заведующий рентген кабинетом</h6>
-                      <p>
-                        <i>"Сотрудничаем на постоянной основе. Высокий уровень профессионализма персонала и оперативность в решении вопросов, четко выражают компанию "Medserv" среди их конкурентов."</i>
+                      <img src="img/feedback/2.jpg" alt="Відгук Євгенія" class="img-fluid mb-4 mx-auto">
+                      <h4 class="c-accent fw-bold">Євгеній</h4>
+                      <h6 class="text-primary" data-i18n="rev4_role">Завідувач рентген кабінетом</h6>
+                      <p data-i18n="rev4_text">
+                        <i>"Співпрацюємо на постійній основі. Високий рівень професіоналізму персоналу та оперативність у вирішенні питань чітко виділяють компанію «Medserv» серед конкурентів."</i>
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="feedback-box rounded p-3 shadow m-4 bg-white">
-                      <img src="img/feedback/4.jpg" alt="Отзыв Якова" class="img-fluid mb-4 mx-auto">
-                      <h4 class="c-accent fw-bold">Яков Сергеевич </h4>
-                      <h6 class="text-primary">Врач-стоматолог</h6>
-                      <p>
-                        <i>"Команда "цельных" инженеров, знающих свое дело! Обращался по поводу ремонта стоматологической установки. Точная диагностика, быстрое решение проблемы, качественный результат!"</i>
+                      <img src="img/feedback/4.jpg" alt="Відгук Якова" class="img-fluid mb-4 mx-auto">
+                      <h4 class="c-accent fw-bold">Яков Сергійович</h4>
+                      <h6 class="text-primary" data-i18n="rev5_role">Лікар-стоматолог</h6>
+                      <p data-i18n="rev5_text">
+                        <i>"Команда «цільних» інженерів, які знають свою справу! Звертався з приводу ремонту стоматологічної установки. Точна діагностика, швидке вирішення проблеми, якісний результат!"</i>
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="feedback-box rounded p-3 shadow m-4 bg-white">
-                      <img src="img/feedback/3.jpg" alt="Отзыв Виталия" class="img-fluid mb-4 mx-auto">
-                      <h4 class="c-accent fw-bold">Виталий</h4>
-                      <h6 class="text-primary">Врач хирург-стоматолог, имплантолог</h6>
-                      <p>
-                        <i>"Благодарим за своевременное и качественное выполнение поставленных задач и надеемся на дальнейшее плодотворное и взаимовыгодное сотрудничество с Вашей компанией!"</i>
+                      <img src="img/feedback/3.jpg" alt="Відгук Віталія" class="img-fluid mb-4 mx-auto">
+                      <h4 class="c-accent fw-bold">Віталій</h4>
+                      <h6 class="text-primary" data-i18n="rev6_role">Лікар хірург-стоматолог, імплантолог</h6>
+                      <p data-i18n="rev6_text">
+                        <i>"Дякуємо за своєчасне та якісне виконання поставлених завдань і сподіваємось на подальшу плідну та взаємовигідну співпрацю з Вашою компанією!"</i>
                       </p>
                     </div>
                   </div>
@@ -235,24 +249,24 @@
 		  <section style="position: relative;">
 			<div id="contact-us" class="bg-white rounded shadow col-12 col-md-4 p-4 h5">
 				<img src="img/logo/logo2.png" alt="" class="img-fluid">
-				<p><i class="bi bi-geo-alt text-primary me-2"></i><a href="https://goo.gl/maps/arv8NfdjAb5aMmaPA">Украина, г. Запорожье, бульвар Шевченко, 12</a></p>
+				<p><i class="bi bi-geo-alt text-primary me-2"></i><a href="https://goo.gl/maps/arv8NfdjAb5aMmaPA" target="_blank" data-i18n="contact_address">Україна, м. Запоріжжя, бульвар Шевченка, 12</a></p>
 				<hr class="bg-primary" style="height: 3px;">
-				<p><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+380660221104">+38(066)022-11-04</a><br>
-				<i class="bi bi-telephone text-primary me-2"></i><a href="tel:+380683495055">+38(068)349-50-55</a></p>
+				<p><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+380660221104" target="_blank">+38(066)022-11-04</a><br>
+				<i class="bi bi-telephone text-primary me-2"></i><a href="tel:+380683495055" target="_blank">+38(068)349-50-55</a></p>
 				<hr class="bg-primary" style="height: 3px;">
-				<p>Наша почта: <a href="mailto:https://goo.gl/maps/BuQ1efStAqpK1bDL9" class="text-primary">medserv3@gmail.com</a></p>
+				<p data-i18n="contact_email_label">Наша пошта: <a href="mailto:medserv3@gmail.com" class="text-primary" target="_blank">medserv3@gmail.com</a></p>
 				<hr class="bg-primary" style="height: 3px;">
-				<p>
-					Мы в социальных сетях:
+				<p data-i18n="contact_social">
+					Ми у соціальних мережах:
 				</p>
 				<div class="social d-flex justify-content-around">
-					<a href="mailto:medserv3@gmail.com" class="btn"><img src="img/social/gmail.svg" alt="gmail" class="img-fluid" height="36px" width="36px"></a>
-					<a href="https://t.me/med_serv" class="btn"><img src="img/social/telegram.svg" alt="telegram" class="img-fluid" height="36px" width="36px"></a>
-					<a href="viber://chat?number=30660221104" class="btn"><img src="img/social/viber.svg" alt="viber" class="img-fluid" height="36px" width="36px"></a>
-					<a href="https://www.instagram.com/med__serv/" class="btn"><img src="img/social/instagram.svg" alt="instagram" class="img-fluid" height="36px" width="36px"></a>
+					<a href="mailto:medserv3@gmail.com" class="btn" target="_blank"><img src="img/social/gmail.svg" alt="gmail" class="img-fluid" height="36px" width="36px"></a>
+					<a href="https://t.me/med_serv" class="btn" target="_blank"><img src="img/social/telegram.svg" alt="telegram" class="img-fluid" height="36px" width="36px"></a>
+					<a href="viber://chat?number=30660221104" class="btn" target="_blank"><img src="img/social/viber.svg" alt="viber" class="img-fluid" height="36px" width="36px"></a>
+					<a href="https://www.instagram.com/med__serv/" class="btn" target="_blank"><img src="img/social/instagram.svg" alt="instagram" class="img-fluid" height="36px" width="36px"></a>
 				</div>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5354.973881966356!2d35.113738!3d47.849532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc672992c10523%3A0x7aada81c7f53830d!2z0LHRg9C7LiDQqNC10LLRh9C10L3QutC-LCAxMiwg0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2OTAwMA!5e0!3m2!1sru!2sua!4v1630164216454!5m2!1sru!2sua" width="100%" height="480" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.4927231675106!2d35.113728800000004!3d47.849419999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc672a1f59bc8b%3A0x84c7d169c727cda3!2z0LHRg9C70YzQstCw0YAg0KjQtdCy0YfQtdC90LrQsCwgMTIsINCX0LDQv9C-0YDRltC20LbRjywg0JfQsNC_0L7RgNGW0LfRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY5MDYx!5e0!3m2!1suk!2sua!4v1794504467920!5m2!1suk!2sua" width="100%" height="480" style="border:0" allowfullscreen="" loading="lazy"></iframe>
 		  </section>
 	</main>
 
@@ -261,17 +275,17 @@
 		  <div class="row opacity-75">
 			<div class="nav col-12 col-md-6 justify-content-center justify-content-md-start align-items-center">
 				<img src="img/logo/FavIcon.png" alt="" width="auto" height="26" class="d-inline-block align-text-top">
-				<span>MedServ 2022 Все права защищены ©</span>
+				<span data-i18n="footer_copy">MedServ 2026 Всі права захищені ©</span>
 			 </div>
 			<div class="nav col-12 col-md-6 justify-content-center justify-content-md-end">
-			  <a class="nav-link" href="#home">О компании</a>
-			  <a class="nav-link" href="#why_we">Наши услуги</a>
-			  <a class="nav-link" href="#testimonials">Отзывы</a>
+			  <a class="nav-link" href="#home" data-i18n="footer_about">Про компанію</a>
+			  <a class="nav-link" href="#why_we" data-i18n="footer_services">Наші послуги</a>
+			  <a class="nav-link" href="#testimonials" data-i18n="footer_reviews">Відгуки</a>
 			</div>
 		  </div>
 		</div>
 	  </footer>
-	
+
 
 	<!-- script for owl carousel -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -280,5 +294,160 @@
 
 	<!-- bootstrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<!-- Language switcher script -->
+	<script>
+		const translations = {
+			uk: {
+				nav_about:       'Про компанію',
+				nav_why:         'Чому ми',
+				nav_team:        'Наші спеціалісти',
+				nav_reviews:     'Відгуки',
+				nav_services:    'Наші послуги',
+				nav_diag:        'Діагностика',
+				nav_repair:      'Ремонт',
+				nav_mount:       'Монтаж',
+				nav_supply:      'Поставки',
+				nav_contacts:    'Контакти',
+				hero_title:      'Ми відновимо Вашу техніку',
+				hero_btn:        "Зв'язатися з нами",
+				why_title:       'Потрібен ремонт медичного обладнання в Україні?',
+				why_desc:        'Сміливо звертайтесь до нашої компанії. Ми маємо великий досвід проведення всіх робіт з обслуговування медичного обладнання, а також штат кваліфікованих спеціалістів. Ми надаємо якісні послуги!',
+				serv1_title:     'Діагностика',
+				serv1_desc:      'Наші спеціалісти проведуть повну діагностику несправностей будь-якого медичного обладнання',
+				serv2_title:     'Ремонт',
+				serv2_desc:      'Кваліфікований та якісний ремонт апаратури у найкоротші терміни',
+				serv3_title:     'Монтаж',
+				serv3_desc:      "Встановлення обладнання та пусконалагоджувальні роботи на об'єктах",
+				serv4_title:     'Поставки',
+				serv4_desc:      'Медична техніка та витратні матеріали до неї за попереднім замовленням',
+				btn_order:       'Замовити',
+				reviews_title:   'Відгуки наших клієнтів',
+				rev1_role:       'Дитячий стоматолог-терапевт',
+				rev1_text:       '"Неодноразово зверталась за консультацією і отримувала повну, розгорнуту відповідь на питання, що цікавили. Сподіваюсь на подальшу плідну спільну роботу!"',
+				rev2_role:       'Зав. зуботехнічною лабораторією',
+				rev2_text:       '"Найкращі спеціалісти в регіоні. Неодноразово мав можливість переконатись у високому професіоналізмі та чуйності співробітників. Будь-які питання вирішуються у найкоротші терміни."',
+				rev3_role:       'Головний лікар',
+				rev3_text:       '«Уважне ставлення до наших інтересів, а також чітке дотримання принципів ділової етики, бажання знайти компроміс, роблять компанію «Medserv» надійним постачальником.»',
+				rev4_role:       'Завідувач рентген кабінетом',
+				rev4_text:       '«Співпрацюємо на постійній основі. Високий рівень професіоналізму персоналу та оперативність у вирішенні питань чітко виділяють компанію «Medserv» серед конкурентів.»',
+				rev5_role:       'Лікар-стоматолог',
+				rev5_text:       '«Команда «цільних» інженерів, які знають свою справу! Звертався з приводу ремонту стоматологічної установки. Точна діагностика, швидке вирішення проблеми, якісний результат!»',
+				rev6_role:       'Лікар хірург-стоматолог, імплантолог',
+				rev6_text:       '"Дякуємо за своєчасне та якісне виконання поставлених завдань і сподіваємось на подальшу плідну та взаємовигідну співпрацю з Вашою компанією!"',
+				contact_address: 'Україна, м. Запоріжжя, бульвар Шевченка, 12',
+				contact_email_label: 'Наша пошта: medserv3@gmail.com',
+				contact_social:  'Ми у соціальних мережах:',
+				footer_copy:     'MedServ 2026 Всі права захищені ©',
+				footer_about:    'Про компанію',
+				footer_services: 'Наші послуги',
+				footer_reviews:  'Відгуки',
+			},
+			ru: {
+				nav_about:       'О компании',
+				nav_why:         'Почему мы',
+				nav_team:        'Наши специалисты',
+				nav_reviews:     'Отзывы',
+				nav_services:    'Наши услуги',
+				nav_diag:        'Диагностика',
+				nav_repair:      'Ремонт',
+				nav_mount:       'Монтаж',
+				nav_supply:      'Поставки',
+				nav_contacts:    'Контакты',
+				hero_title:      'Мы восстановим Вашу технику',
+				hero_btn:        'Связаться с нами',
+				why_title:       'Необходим ремонт медицинского оборудования в Украине?',
+				why_desc:        'Смело обращайтесь в нашу компанию. Мы имеем большой опыт проведения всех работ по обслуживанию медицинского оборудования, а так же штат квалифицированных специалистов. Мы оказываем качественные услуги!',
+				serv1_title:     'Диагностика',
+				serv1_desc:      'Наши специалисты проведут полную диагностику неисправностей любого медицинского оборудования',
+				serv2_title:     'Ремонт',
+				serv2_desc:      'Квалифицированный и качественный ремонт аппаратуры в кратчайшие сроки',
+				serv3_title:     'Монтаж',
+				serv3_desc:      'Установка оборудования и пусконаладочные работы на объектах',
+				serv4_title:     'Поставки',
+				serv4_desc:      'Медицинская техника и расходники к ней по предзаказу',
+				btn_order:       'Заказать',
+				reviews_title:   'Отзывы наших клиентов',
+				rev1_role:       'Детский стоматолог-терапевт',
+				rev1_text:       '"Неоднократно обращалась за консультацией и получала полный, развёрнутый ответ на интересующие вопросы. Надеюсь на дальнейшую плодотворную совместную работу!"',
+				rev2_role:       'Зав. зуботехнической лабораторией',
+				rev2_text:       '"Лучшие специалисты в регионе. Неоднократно имел возможность убедиться в высоком профессионализме и отзывчивости сотрудников. Любые вопросы решаются в кратчайшие сроки."',
+				rev3_role:       'Главный врач',
+				rev3_text:       '«Внимательное отношение к нашим интересам, а также четкое следование принципам деловой этики, желание найти компромисс, делают компанию «Medserv» надежным поставщиком.»',
+				rev4_role:       'Заведующий рентген кабинетом',
+				rev4_text:       '«Сотрудничаем на постоянной основе. Высокий уровень профессионализма персонала и оперативность в решении вопросов, четко выражают компанию «Medserv» среди их конкурентов.»',
+				rev5_role:       'Врач-стоматолог',
+				rev5_text:       '«Команда «цельных» инженеров, знающих свое дело! Обращался по поводу ремонта стоматологической установки. Точная диагностика, быстрое решение проблемы, качественный результат!»',
+				rev6_role:       'Врач хирург-стоматолог, имплантолог',
+				rev6_text:       '"Благодарим за своевременное и качественное выполнение поставленных задач и надеемся на дальнейшее плодотворное и взаимовыгодное сотрудничество с Вашей компанией!"',
+				contact_address: 'Украина, г. Запорожье, бульвар Шевченко, 12',
+				contact_email_label: 'Наша почта: medserv3@gmail.com',
+				contact_social:  'Мы в социальных сетях:',
+				footer_copy:     'MedServ 2026 Все права защищены ©',
+				footer_about:    'О компании',
+				footer_services: 'Наши услуги',
+				footer_reviews:  'Отзывы',
+			}
+		};
+
+		// Elements where the inner HTML has a child tag (link) — handle separately
+		const htmlKeys = {
+			contact_email_label: {
+				uk: 'Наша пошта: <a href="mailto:medserv3@gmail.com" class="text-primary" target="_blank">medserv3@gmail.com</a>',
+				ru: 'Наша почта: <a href="mailto:medserv3@gmail.com" class="text-primary" target="_blank">medserv3@gmail.com</a>',
+			},
+			contact_address: {
+				uk: 'Україна, м. Запоріжжя, бульвар Шевченка, 12',
+				ru: 'Украина, г. Запорожье, бульвар Шевченко, 12',
+			}
+		};
+
+		// Review text keys that wrap content in <i> tag
+		const reviewTextKeys = ['rev1_text','rev2_text','rev3_text','rev4_text','rev5_text','rev6_text'];
+
+		function setLang(lang) {
+			const t = translations[lang];
+			document.documentElement.lang = lang;
+
+			document.querySelectorAll('[data-i18n]').forEach(el => {
+				const key = el.getAttribute('data-i18n');
+				if (!t[key]) return;
+
+				// contact_email_label has an inner <a> tag
+				if (key === 'contact_email_label') {
+					el.innerHTML = htmlKeys.contact_email_label[lang];
+					return;
+				}
+
+				// Review text nodes are wrapped in <i>
+				if (reviewTextKeys.includes(key)) {
+					el.innerHTML = '<i>' + t[key] + '</i>';
+					return;
+				}
+
+				el.textContent = t[key];
+			});
+
+			// Address link text
+			document.querySelector('a[href="https://goo.gl/maps/arv8NfdjAb5aMmaPA"]').textContent =
+				lang === 'uk'
+					? 'Україна, м. Запоріжжя, бульвар Шевченка, 12'
+					: 'Украина, г. Запорожье, бульвар Шевченко, 12';
+
+			// Update active button
+			document.getElementById('btn-uk').classList.toggle('active', lang === 'uk');
+			document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+
+			// Save preference
+			try { localStorage.setItem('medserv_lang', lang); } catch(e) {}
+		}
+
+		// On load: restore saved language (default: uk)
+		(function() {
+			let saved = 'uk';
+			try { saved = localStorage.getItem('medserv_lang') || 'uk'; } catch(e) {}
+			if (saved !== 'uk') setLang(saved);
+		})();
+	</script>
 </body>
 </html>
