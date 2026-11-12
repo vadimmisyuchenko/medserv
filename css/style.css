@@ -1,7 +1,7 @@
 /*  settings color */
 
 :root {
-    --text-color:#626567;;
+    --text-color:#626567;
     --primery:#73C6B6;
     --hover:#148F77;
 }
@@ -52,10 +52,6 @@ body {
 
 /* carousel setting */
 
-.feedback-box {
-    height: 380px;
-}
-
 .feedback-box img {
     width: 80px!important;
     height: 80px;
@@ -81,12 +77,6 @@ body {
 
 .owl-stage {
     transition: all 1s cubic-bezier(.25,.8,.25,1)!important;
-}
-
-@media (max-width: 1024px){
-    .feedback-box {
-        height: auto
-    }
 }
 
 /* vertical divider */
@@ -147,7 +137,6 @@ body {
     font-size: 1.4rem;
 }
 
-
 @media (max-width: 910px) {
     #contact-us {
         position: relative;
@@ -178,6 +167,39 @@ body {
 
 .rounded {
     border-radius: 1rem!important;
+}
+
+/* language switcher */
+
+.lang-switcher {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+}
+
+.lang-btn {
+			font-size: 13px;
+			font-weight: 600;
+			padding: 3px 9px;
+			border-radius: 4px;
+			border: 2px solid var(--primery);
+			background: transparent;
+			color: var(--primery);
+			cursor: pointer;
+			transition: background 0.2s, color 0.2s;
+			line-height: 1.4;
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lang-btn.active {
+			background:var(--primery);
+			color: #fff;
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lang-btn:hover:not(.active) {
+			background: var(--primery);
+			color: #fff;
 }
 
 @media (max-width: 575px){
